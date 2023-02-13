@@ -107,6 +107,16 @@ a {
           flex-direction: column;
 }
 
+.page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .first-screen {
   background: url("../img/first-screen/01.jpg") 50% no-repeat;
   color: #fff;

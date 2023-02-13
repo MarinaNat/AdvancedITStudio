@@ -18,6 +18,11 @@ a {
 	flex-direction: column;
 }
 
+.page {
+	display: flex;
+	flex-direction: column;
+}
+
 .first-screen {
 	background: url("../img/first-screen/01.jpg") 50% no-repeat;
 	color: #fff;
