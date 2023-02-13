@@ -476,15 +476,15 @@ a {
 
 .all-services {
 	position: relative;
-	padding-bottom: 152px;
+	padding-bottom: 67px;
 	@media (max-width: 1180px) {
-		padding-bottom: 102px;
+		padding-bottom: 40px;
 	}
 	@media (max-width: 992px) {
-		padding-bottom: 72px;
+		padding-bottom: 30px;
 	}
 	@media (max-width: 767px) {
-		padding-bottom: 52px;
+		padding-bottom: 30px;
 	}
 
 	&__background {
@@ -511,6 +511,17 @@ a {
 	&__body {
 		max-width: 1110px;
 		margin: 0 auto;
+		padding: 0 0 85px;
+		border-bottom: 1px solid #e0e0e0;
+		@media (max-width: 1180px) {
+			padding: 0 0 55px;
+		}
+		@media (max-width: 992px) {
+			padding: 0 0 35px;
+		}
+		@media (max-width: 767px) {
+			padding: 0 0 25px;
+		}
 	}
 
 	// .all-services__header
