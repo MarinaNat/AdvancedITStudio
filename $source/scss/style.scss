@@ -178,7 +178,7 @@ a {
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 45px;
-	&__button:hover {
+	&:hover {
 		background: #739ff6;
 		box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.45);
 	}
@@ -214,11 +214,7 @@ a {
 	// .services__text
 
 	&__text {
-		font-weight: 400;
-		font-size: 16px;
-		line-height: 25px;
 		text-align: center;
-		color: #999999;
 		margin: 0 auto 70px;
 		max-width: 739px;
 	}
@@ -276,6 +272,14 @@ a {
 		line-height: 22px;
 	}
 }
+
+.text {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 25px;
+	color: #999999;
+}
+
 .item {
 	&__row {
 		display: flex;
@@ -330,6 +334,141 @@ a {
 		font-weight: 400;
 		font-size: 14px;
 		line-height: 22px;
+		color: #999999;
+	}
+}
+
+.about {
+	padding: 0 0 112px;
+	// .about__row
+
+	&__row {
+		padding-bottom: 90px;
+		border-bottom: 1px solid #e0e0e0;
+		display: flex;
+		@media (max-width: 1180px) {
+			padding-bottom: 60px;
+		}
+		@media (max-width: 992px) {
+			flex-direction: column;
+		}
+		@media (max-width: 767px) {
+			flex-direction: column;
+		}
+	}
+
+	&__body {
+		flex: 1 1 50%;
+		padding: 103px 56px 0 0;
+		@media (max-width: 1180px) {
+			padding: 103px 56px 0 0;
+		}
+		@media (max-width: 992px) {
+			padding: 103px 0 0 0;
+		}
+		@media (max-width: 767px) {
+			padding: 103px 0 0 0;
+		}
+	}
+	// .about__title
+
+	&__title {
+		margin-bottom: 45px;
+		@media (max-width: 992px) {
+			text-align: center;
+		}
+	}
+
+	// .about__text
+
+	&__text {
+		padding-bottom: 25px;
+	}
+
+	// .about__link
+
+	&__link {
+		font-weight: 500;
+		font-size: 16px;
+		text-decoration-line: underline;
+
+		/* Accent */
+
+		color: #4985ff;
+	}
+
+	// .about__image
+
+	&__image {
+		flex: 1 1 50%;
+		padding: 51px 0 0 56px;
+		@media (max-width: 992px) {
+			padding: 45px 0 0 0;
+			margin: 0 auto;
+		}
+	}
+
+	&__image img {
+		max-width: 100%;
+	}
+
+	// .about__numbers
+
+	&__numbers {
+	}
+}
+
+.numbers {
+	display: flex;
+	gap: 100px;
+	max-width: 920px;
+	margin: 0 auto;
+	flex-wrap: wrap;
+	@media (max-width: 992px) {
+		justify-content: space-around;
+		gap: 50px;
+	}
+	// .numbers__row
+
+	&__row {
+		display: flex;
+		flex-direction: column;
+		padding-top: 70px;
+	}
+
+	// .numbers__body
+
+	&__body {
+		display: flex;
+		align-items: flex-end;
+		padding-bottom: 15px;
+	}
+
+	// .numbers__image
+
+	&__image {
+		width: 30px;
+		height: 30px;
+	}
+
+	&__image img {
+		width: 100%;
+	}
+
+	// .numbers__number
+
+	&__number {
+		padding: 0 0 0 13px;
+		font-weight: 400;
+		font-size: 36px;
+		line-height: 30px;
+	}
+
+	// .numbers__title
+
+	&__title {
+		font-weight: 400;
+		font-size: 16px;
 		color: #999999;
 	}
 }
