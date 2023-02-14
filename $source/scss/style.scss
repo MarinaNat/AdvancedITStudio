@@ -718,6 +718,18 @@ a {
 	position: relative;
 	margin: 67px 0 85px;
 	// .video__background
+	@media (max-width: 1180px) {
+		margin: 67px 0 85px;
+	}
+	@media (max-width: 992px) {
+		margin: 67px 0 85px;
+	}
+	@media (max-width: 767px) {
+		margin: 37px 0 45px;
+	}
+	@media (max-width: 570px) {
+		margin: 37px 0 45px;
+	}
 
 	&__background {
 		position: absolute;
@@ -727,6 +739,18 @@ a {
 		width: 100%;
 		height: 490px;
 		z-index: -1;
+		@media (max-width: 1180px) {
+			height: 490px;
+		}
+		@media (max-width: 992px) {
+			height: 430px;
+		}
+		@media (max-width: 767px) {
+			height: 360px;
+		}
+		@media (max-width: 570px) {
+			height: 250px;
+		}
 	}
 
 	// .video__body
@@ -742,6 +766,18 @@ a {
 		padding: 70px 0 30px;
 		color: #fff;
 		text-align: center;
+		@media (max-width: 1180px) {
+			padding: 70px 0 30px;
+		}
+		@media (max-width: 992px) {
+			padding: 50px 0 20px;
+		}
+		@media (max-width: 767px) {
+			padding: 40px 0 20px;
+		}
+		@media (max-width: 570px) {
+			padding: 30px 0 10px;
+		}
 	}
 
 	// .video__text
@@ -750,6 +786,18 @@ a {
 		color: #fff;
 		text-align: center;
 		padding: 0px 0 70px;
+		@media (max-width: 1180px) {
+			padding: 0px 0 70px;
+		}
+		@media (max-width: 992px) {
+			padding: 0px 0 50px;
+		}
+		@media (max-width: 767px) {
+			padding: 0px 0 20px;
+		}
+		@media (max-width: 570px) {
+			padding: 0px 0 10px;
+		}
 	}
 
 	// .video__video
@@ -777,11 +825,52 @@ a {
 	box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
 	border: 1px solid #ffffff;
 	border-radius: 200px;
+	@media (max-width: 1180px) {
+		gap: 19px;
+		padding: 18px 30px;
+	}
+	@media (max-width: 992px) {
+		gap: 19px;
+		padding: 18px 30px;
+	}
+	@media (max-width: 767px) {
+		top: calc(50% - 76px / 2);
+		left: calc(50% - 210px / 2);
+		gap: 18px;
+		padding: 17px 25px;
+	}
+	@media (max-width: 570px) {
+		top: calc(50% - 52px / 2);
+		left: calc(50% - 178px / 2);
+		gap: 16px;
+		padding: 10px 15px;
+	}
 	// .video-buttom__icon
 
 	&__icon {
+		width: 60px;
+		height: 60px;
+		@media (max-width: 1180px) {
+			width: 50px;
+			height: 50px;
+		}
+		@media (max-width: 992px) {
+			width: 50px;
+			height: 50px;
+		}
+		@media (max-width: 767px) {
+			width: 40px;
+			height: 40px;
+		}
+		@media (max-width: 570px) {
+			width: 30px;
+			height: 30px;
+		}
 	}
 
+	&__icon img {
+		width: 100%;
+	}
 	// .video-buttom__text
 
 	&__text {
