@@ -16,22 +16,39 @@
       <main class="page">
         <div class="first-screen">
           <div class="container">
+            <div class="first-screen__burger">
+              <span></span>
+            </div>
             <nav class="first-screen__menu">
               <ul class="first-screen__list">
                 <li class="first-screen__item first-screen__item_active">
                   <a href="#" class="first-screen__link">Главная</a>
                 </li>
                 <li class="first-screen__item">
-                  <a href="#" class="first-screen__link">Наши проекты</a>
+                  <a
+                    data-goto=".all-projects"
+                    href="#"
+                    class="first-screen__link"
+                    >Наши проекты</a
+                  >
                 </li>
                 <li class="first-screen__item">
-                  <a href="#" class="first-screen__link">Услуги</a>
+                  <a
+                    data-goto=".all-services"
+                    href="#"
+                    class="first-screen__link"
+                    >Услуги</a
+                  >
                 </li>
                 <li class="first-screen__item">
-                  <a href="#" class="first-screen__link">Новости</a>
+                  <a data-goto=".video" href="#" class="first-screen__link"
+                    >Новости</a
+                  >
                 </li>
                 <li class="first-screen__item">
-                  <a href="#" class="first-screen__link">Контакты</a>
+                  <a data-goto=".footer" href="#" class="first-screen__link"
+                    >Контакты</a
+                  >
                 </li>
               </ul>
             </nav>
@@ -486,5 +503,6 @@
         </footer>
       </main>
     </div>
+    <script src="./js/script.js"></script>
   </body>
 </html>
